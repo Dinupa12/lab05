@@ -1,0 +1,120 @@
+/*
+filename: lab04.css
+
+author: Dinupa Senevirathne
+
+created: 24/03/2025
+
+last modified: 25/03/2025
+
+description: Styles for lab04.html
+*/
+
+/* Cancel hiding on hover from lab04 */
+aside:hover {
+    display:block;
+}
+
+/* Display menu items in a line */
+.menu {
+    display: inline-block;
+}
+
+/* Remove list bullets for nav menu */
+nav ul {
+    list-style: none;
+}
+
+/* Aside box styling */
+aside {
+    border: 2px solid #000;
+    margin: 1em;
+    padding: 1em;
+    background-image: url("images/fade.jpg");
+    width: 30%;
+    float: right;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+/* Header styling */
+header {
+    border: 1px solid darkgray;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: lightgray;
+    text-align: center;
+}
+
+/* Footer styling */
+footer {
+    border-top: 4px double #009688;
+    clear: both;
+}
+
+/* Float list and table sections */
+#lists {
+    float: left;
+}
+
+#tables {
+    float: right;
+    margin: auto;
+}
+
+/* Hyperlinks clear float */
+#hyperlinks {
+    clear: both;
+    float: left;
+}
+
+/* Float images */
+#images {
+    float: right;
+}
+
+/* Figure styling */
+figure {
+    border: 2px solid #ccc;
+}
+
+/* Equal width sections */
+#lists, #tables {
+    width: 45%;
+    text-align: center;
+}
+
+/* Align lists back to left */
+ol, ul, dl {
+    text-align: left;
+}
+
+/* Prevent article getting too narrow */
+article {
+    min-width: 30em;
+}
+
+/* Footer paragraph layout */
+footer p {
+    display: inline-block;
+    width: 33%;
+}
+
+footer p:first-child {
+    float: left;
+}
+
+footer p:nth-child(2) {
+    text-align: center;
+}
+
+footer p:last-child {
+    float: right;
+    text-align: right;
+}
+
+
+
+
+
+
+
