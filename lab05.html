@@ -5,6 +5,12 @@
   <meta name="description" content="Demonstrates CSS layout" />
   <meta name="keywords" content="HTML5, CSS layout" />
   <meta name="author" content="A Lecturer"  />
+
+
+  <!-- Updated responsive design to adapt well to screen sizes -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
   <title>CSS Layout</title>
   <!-- References to external CSS files -->
 <<<<<<< HEAD
@@ -24,7 +30,9 @@
 <body>
    <header>
 		<h1>HTML 5 Basic Content Elements with CSS Layout</h1>
-    </header> 
+    </header>
+	<!-- updated skip to main content button id asignning  -->
+	<section id="maincontent"></section> 
 	<nav>
         <p class="menu"><a href="#headings">Heading and Paragraphs</a></p> 
 		<p class="menu"><a href="#sc">Special Characters</a> </p> 
@@ -48,10 +56,20 @@
 		  <p>There are 6 levels of heading. Headings are logical marked. Do not skip levels. If you want to change the size of a heading, don't change its level - change the CSS.</p>
 		  <h3>Paragraphs</h3>
 		  <p>Paragraphs contain the body text of a web page. You cannot put another block element inside a paragraph.</p>
+
+		  <!-- updated skip to main content button -->
+		  <a href="#maincontent" class="skip-link">Skip to main content</a>
+
+
       </section>
       <section>
 		  <h2 id="sc">Special Characters</h2>
 		  <p>While HTML supports many named special characters like <span class="special">&#174; (#174)</span>, XML only supports 5 namely: <span class="special">&quot; &apos; &amp; &lt;</span>  and <span class="special">&gt;</span>.  So to keep you HTML compliant you need to use numbers for all the others.</p>
+
+		  <!-- updated skip to main content button -->
+		  <a href="#maincontent" class="skip-link">Skip to main content</a>
+
+
       </section>
          
       
@@ -130,17 +148,35 @@
 			 </tr>
 			</tfoot>
 			</table>
+
+			<!-- updated skip to main content button -->
+			<a href="#maincontent" class="skip-link">Skip to main content</a>
+
+
 		</section>
 		<section id="hyperlinks">
 		  <h2>Hyperlinks</h2>
-		  <p><a href="http://ilearn.swin.edu.au" title="This takes you to Blackboard"> This is a link to an external site Blackboard</a></p>
-		  <p>This is a link to the <a href="#list">List Section </a> of the Web page</p>
-		  <p>This is a link using <a href="mailto:someone@swin.edu.au"> email</a> rather than an http protocol</p> 
+
+		 <!-- Updated hyperlinks to open links in seperated Window -->
+		 <p><a href="http://ilearn.swin.edu.au" title="This takes you to Blackboard" target="_blank"> This is a link to an external site Blackboard</a></p>
+		 <p>This is a link to the <a href="#list" target="_blank">List Section </a> of the Web page</p>
+		 <p>This is a link using <a href="mailto:someone@swin.edu.au" target="_blank"> email</a> rather than an http protocol</p>
+
+		  <!-- updated skip to main content button -->
+		  <a href="#maincontent" class="skip-link">Skip to main content</a>
+
+
+
 		</section>
 		<section id="images">
 			<h2 >Images</h2>
 			<figure><figcaption>This thumbnail image is used as a hyperlink to a larger version of the image</figcaption>
 			<a href="images/mycat.jpg">  <img src="images/mycat_small.jpg" alt="Photo of my cat" title="Filesize 222kb " /></a></figure>
+
+			<!-- updated skip to main content button -->
+			<a href="#maincontent" class="skip-link">Skip to main content</a>
+
+			
 		</section>
       
 	</article>
